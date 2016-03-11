@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+	<form method="post" action="servlet/DeleteStudent">
+		<h1>删除学生信息</h1><br/>
+		<div class="div_del_all">	
+			<div class="div_del">学生学号：<input type="text" name="sno"/></div>	
+			<div class="div_del_button"><input type="submit" value="提交"/></div> 
+		</div>
+	</form>
+	
+</body>
+</html>
