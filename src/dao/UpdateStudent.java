@@ -89,7 +89,6 @@ public class UpdateStudent extends HttpServlet {
 			pre.setString(7,semail);
 			pre.setString(8,sno);
 			pre.executeUpdate();	
-//			con.close();
 			
 			PrintStream out=new PrintStream(response.getOutputStream());	
 			out.println("<br><br><br><br><h1 style='color:#930000;text-align:center;font-family: YouYuan;'>学生修改成功!</h1>");

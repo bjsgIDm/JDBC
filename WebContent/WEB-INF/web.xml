@@ -4135,4 +4135,13 @@
     <servlet-name>SelectStudent</servlet-name>
     <url-pattern>/servlet/SelectStudent</url-pattern>
   </servlet-mapping>
+  <!-- ShowAllStudent-->
+  <servlet>
+    <servlet-name>ShowAllStudent</servlet-name>
+    <servlet-class>dao.ShowAllStudent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowAllStudent</servlet-name>
+    <url-pattern>/servlet/ShowAllStudent</url-pattern>
+  </servlet-mapping>
 </web-app>

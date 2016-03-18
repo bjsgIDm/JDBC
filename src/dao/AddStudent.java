@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import util.DBHelper;
 
-
 @WebServlet("/GetFullInformation_s")
 public class AddStudent extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -23,7 +22,7 @@ public class AddStudent extends HttpServlet {
     public String ssex=null; 
     public String sclass=null; 
     public String saddress=null; 
-    public float stelephone;
+    public float stelephone=0;
     public String semail=null; 
 
     /**
@@ -64,10 +63,8 @@ public class AddStudent extends HttpServlet {
 		try {
 			con=DBHelper.getConnection();
 			String sql="insert into tstudent(sno,sname,sbirthday,ssex,sclass,address,phone,email) values(?,?,?,?,?,?,?,?)";		
-			pre=con.prepareStatement(sql);
-			
-			
-						
+			pre=con.prepareStatement(sql);		
+									
 			pre.setString(1,sno);
 			pre.setString(2,sname);
 			

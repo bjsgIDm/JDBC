@@ -11,7 +11,20 @@
 	<form method="post" action="servlet/SelectStudent">
 		<h1>查询学生信息</h1><br/>
 		<div class="div_del_all">	
-			<div class="div_del">学生学号：<input type="text" name="sno"/></div>	
+			<div class="div_del">
+				学生学号：
+				<input type="text" name="sno"/> 
+				<!-- 修改成单选表单 -->
+			<!-- 
+				<select name="cars">
+				<option value="volvo">Volvo</option>
+				<option value="saab">Saab</option>
+				<option value="fiat" selected="selected">Fiat</option>
+				<option value="audi">Audi</option>
+				</select>
+			-->
+			
+			</div>	
 			<div class="div_del_button"><input type="submit" value="提交"/></div> 
 		</div>
 	</form>

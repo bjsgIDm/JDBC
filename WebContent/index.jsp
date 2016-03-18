@@ -37,6 +37,12 @@
     	<tr>
     		<td><div class="div_index"><a href="SelectStudent.jsp">查询学生信息</a></div></td>
     	</tr>
-    </table>				
+    </table>
+    <br>
+    <div class="show_all">
+    	<form action="servlet/ShowAllStudent" method="post">
+    		<input type="submit" value="显示全部学生信息">
+    	</form>	
+    </div>  	
   </body>
 </html>

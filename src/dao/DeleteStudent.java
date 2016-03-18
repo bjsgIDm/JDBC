@@ -53,11 +53,9 @@ public class DeleteStudent extends HttpServlet {
 			con=DBHelper.getConnection();
 			String sql="delete from tstudent where sno=?";		
 			pre=con.prepareStatement(sql);
-			
-						
+									
 			pre.setString(1,sno);
 			pre.executeUpdate();
-//			con.close();
 			
 			PrintStream out=new PrintStream(response.getOutputStream());	
 			out.println("<br><br><br><br><h1 style='color:#930000;text-align:center;font-family: YouYuan;'>学生删除成功!</h1>");

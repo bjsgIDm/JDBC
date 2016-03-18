@@ -52,3 +52,21 @@
 		    line-height: 50px;
   		}
   		hr{width:60%;text-align:center;border:#600000 1.5px solid;}
+  		.show_all{
+  			width:150px;
+  			height:20px;
+  			margin-left:80%;
+  		}
+  		.table_h{
+  			text-align:center;
+  			font-size:30px;
+  		}
+  		.table_stu {
+  			font-size:15px;
+  			width:65%;
+  		}
+  		.table_stu td{
+  			text-align:center;
+  			border:1px solid gray;
+  			height:25px;
+  		}

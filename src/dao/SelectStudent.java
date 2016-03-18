@@ -49,10 +49,8 @@ public class SelectStudent extends HttpServlet {
 				String sno=request.getParameter("sno");				
 				con=DBHelper.getConnection();				
 				String sql="select * from tstudent where sno=?";
-				System.out.println("select≤‚ ‘3");
 				pre=con.prepareStatement(sql);
 				pre.setString(1,sno);
-				System.out.println("select≤‚ ‘4");
 				res=pre.executeQuery();				
 				StudentsInformation student=new StudentsInformation();
 				if(res.next()){					
